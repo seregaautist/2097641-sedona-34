@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.navigation-link-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+.navigation-link  {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+}
+.welcome-logo {
+  background-color: #DAE8F1;
+  background-image: url(../images/index-background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.advantages-town {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-main {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-description {
+  text-align: center;
+}
+.advantages-list-item-town {
+  background-color: #E1B792;
+  /* background-image: url("../images/advantages/sedona-town.jpg"); */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+advantages-devil-bridge {
+  background-color: #91745E;
+  background-image: url("../images/advantages/devil-bridge.jpgs");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.search-hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.search-hotel-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+.newsletter {
+  background-color: #3D5C5E;
+  background-image: url("..//images/background-index.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
