@@ -215,6 +215,7 @@ body {
 }
 .hotel-card-link {
   text-decoration: none;
+  color: inherit;
 }
 .hotel-card-button {
   font-size: 16px;
