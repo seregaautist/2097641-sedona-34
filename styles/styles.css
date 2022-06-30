@@ -249,26 +249,52 @@ color:#000000;
 }
 
 /* Футер */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact {
+  width: 450px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+.footer-social-list {
+  display: flex;
+}
 .footer {
   background-color: #ffffff;
 }
 
 /* Каталог */
-.hotel-filter {
+.inner-header {
+  color: #FFFFFF;
   background-color: #826359;
   background-image: url("..//images/background-catalog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
 }
+/* .hotel-filter {
+  background-color: #826359;
+  background-image: url("..//images/background-catalog.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} */
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   text-align: left;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
-
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+}
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -277,7 +303,10 @@ color:#000000;
   color: #ffffff;
   text-decoration: none;
 }
-
+/* Фильтры выбора гостиницы */
+.container-choise {
+  display: flex;
+}
 .choise-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -321,7 +350,10 @@ color:#000000;
 .catalog-sorting {
   background-color: #ffffff;
 }
-
+.card {
+  display: flex;
+}
+/* Карточки гостиниц */
 .hotels {
   background-color: #ffffff;
 }
@@ -352,25 +384,18 @@ color:#000000;
   background-color: #756157;
 }
 
-button-to-favorites {
+.button-to-favorites {
   font-weight: 700;
   text-transform: capitalize;
   color: #ffffff;
   background-color: #82b3d3;
 }
 
-button-in-favorites {
+.button-in-favorites {
   font-weight: 700;
   text-transform: capitalize;
   color: #ffffff;
   background-color: #7db54f;
-}
-
-hotel-card-rating {
-  font-weight: 400;
-  text-transform: capitalize;
-  color: #333333;
-  background-color: #f2f2f2;
 }
 
 .type-of-housing {
@@ -381,4 +406,11 @@ hotel-card-rating {
 .hotel-card-price {
   text-align: left;
   color: #333333;
+}
+/* Пагинация */
+.container-pagination {
+  display: flex;
+}
+.pagination {
+  display: flex;
 }
