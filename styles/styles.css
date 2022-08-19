@@ -86,18 +86,19 @@ body {
 .navigation-list-user {
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 400px;
   margin: auto 0 auto auto;
   list-style-type:none;
 }
 .navigation-link {
   padding: auto ;
+  list-style-type:none;
 }
 .navigation-link-button {
-  display: inline-block;
+  display: block;
   min-width: 160px;
   min-height: 37px;
-  margin: auto auto auto 20px;
+  margin: 14px 0 20px;
   padding: 9px 15px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -165,10 +166,11 @@ body {
   margin: 0 0 91px;
   padding: 0;
   list-style-type: none;
-}
-.advantages-number {
   text-align: center;
 }
+/* .advantages-number {
+  text-align: center;
+} */
 .container-text {
   width: 230;
   margin: 92px 85px;
@@ -196,6 +198,7 @@ body {
   background-color: #82b3d3;
   margin: 0;
   padding: 0;
+  /* align-items: center; */
 }
 .service-list {
   display: flex;
@@ -281,6 +284,8 @@ color:#000000;
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  border: none
+  cursor: pointer;
 }
 /* Подпишитесь на рассылку */
 
@@ -334,11 +339,29 @@ color:#000000;
 /* Футер */
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px 0 30px;
+  text-align: center;
+  align-items: center;
 }
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  min-width: 142px;
+  margin:0;
+  padding:0;
+  align-items: center;
+}
+.social-list-item {
+  min-width: 33.33%;
+  /* min-height:47px; */
+}
+.social-button {
+  /* padding: 13px 12px; */
+  display: block;
+  /* min-height: 40px; */
 }
 .footer-contact {
   max-width: 720px;
