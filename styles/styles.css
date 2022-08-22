@@ -243,9 +243,26 @@ color:#000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
+.advantages-housing   {
+  background-image: url(../images/advantages/housing.svg);
+  background-repeat: no-repeat;
+}   {
+  background-image: url(../images/advantages/food.svg);
+  background-repeat: no-repeat;
+}
+.advantages-food   {
+  background-image: url(../images/advantages/food.svg);
+  background-repeat: no-repeat;
+}
+.advantages-souvenirs {
+  background-image: url(../images/advantages/souvenirs.svg);
+  background-repeat: no-repeat;
+}
+
 /* Заинтересовались */
 .search-hotel {
   margin: 0 0 93px;
