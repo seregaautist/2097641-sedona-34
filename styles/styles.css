@@ -58,6 +58,8 @@ body {
   margin: 0 auto;
   width: 1060px;
 }
+
+
 /* Навигация */
 .navigation {
   display:flex;
@@ -112,13 +114,14 @@ body {
   border: none;
 }
 
+
+/* Добро пожаловать  */
 .main-container {
   flex-grow: 1;
 }
 .page-header {
   background-color: #ffffff;
 }
-/* Добро пожаловать  */
 .welcome {
   text-align: center;
   background-color: #dae8f1;
@@ -156,9 +159,7 @@ body {
 }
 
 
-
 /* Преимущества Седодоны */
-
 .advantages-list {
   display:flex;
   flex-wrap: wrap;
@@ -181,15 +182,19 @@ body {
   margin:102px 85px;
 }
 .container-service {
-  /* display: flex; */
-  width: 230px;
-  /* min-height: 384px; */
-  margin: 80px 85px;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 384px;
+  padding: 182px 85px 81px 85px;
+  background-position: top 80px center;
+  background-repeat: no-repeat;
 }
 .container-advatages {
   display: flex;
+  min-width: 400px;
+  min-height: 384px;
+
 }
 .advantages-item-main {
   display: flex;
@@ -247,21 +252,16 @@ color:#000000;
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
-.advantages-housing   {
+.icon-housing {
   background-image: url(../images/advantages/housing.svg);
-  background-repeat: no-repeat;
-}   {
-  background-image: url(../images/advantages/food.svg);
-  background-repeat: no-repeat;
 }
-.advantages-food   {
+.icon-food {
   background-image: url(../images/advantages/food.svg);
-  background-repeat: no-repeat;
 }
-.advantages-souvenirs {
+.icon-souvenirs {
   background-image: url(../images/advantages/souvenirs.svg);
-  background-repeat: no-repeat;
 }
+
 
 /* Заинтересовались */
 .search-hotel {
@@ -280,7 +280,6 @@ color:#000000;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .search-hotel-description {
   margin: 0  auto 56px;
   font-size: 22px;
@@ -288,7 +287,6 @@ color:#000000;
   /* font-weight: 400; */
   color: #333333;
 }
-
 .button-search-hotel {
   font-weight: 700;
   margin: 0 auto ;
@@ -304,8 +302,9 @@ color:#000000;
   border: none
   cursor: pointer;
 }
-/* Подпишитесь на рассылку */
 
+
+/* Подпишитесь на рассылку */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -353,6 +352,7 @@ color:#000000;
   color: #333333;
 }
 
+
 /* Футер */
 .footer-container {
   display: flex;
@@ -392,12 +392,16 @@ color:#000000;
 }
 
 /* Каталог */
+
+
+/* Хедер */
 .inner-header {
   color: #FFFFFF;
   background-color: #826359;
   background-image: url("..//images/background-catalog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom:  55px;
 
 }
 /* .hotel-filter {
@@ -412,12 +416,16 @@ color:#000000;
   line-height: 78px;
   font-weight: 700;
   text-align: left;
+  margin: 0;
+  padding: 0;
   /* color: #ffffff; */
 }
+
+
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin: 10px 0 40px 0;
   padding: 0;
   list-style-type: none;
 
@@ -430,12 +438,21 @@ color:#000000;
   text-align: left;
   color: #ffffff;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
-/* .coise-hotels{
-  display: flex;
-} */
-/* Фильтры выбора гостиницы */
-.container-choise {
+.breadcrumbs-item:not(:last-child):after{
+content: url(..//images/icon/breadcrumbs-icon.svg);
+position: relative;
+margin:auto 10px auto 10px;
+}
+/* .breadcrumbs-icon{
+  margin:0 auto 0 auto;
+  } */
+
+
+/* Выбор гостиницы */
+.choise-filter {
   display: flex;
 }
 .choise-filter-title {
@@ -453,25 +470,27 @@ color:#000000;
   text-align: left;
   color: #ffffff;
 }
-
-.sort-hotel {
-  margin-right: auto;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: left;
-  text-transform: capitalize;
+.container-sort {
+  display: flex;
+ }
+ .container-button {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0 0 auto;
 }
-
 .button-submit {
   padding: 14px 15px;
   font-size: 16px;
+  min-width: 130px;
+  min-height: 48px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  text-transform: capitalize;
+  text-transform:capitalize;
   color: #ffffff;
   background-color: #82b3d3;
+  list-style: none;
+  /* display: inline-block; */
 }
 
 .button-reset {
@@ -481,17 +500,43 @@ color:#000000;
   text-align: center;
   color: #ffffff;
 }
+  /* display: inline-block; */
 
 
+
+ /* Сортировка гостиниц */
+
+
+.sort-hotel {
+  margin:0 191px 0 0 ;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: capitalize;
+}
+.select-control {
+  margin-right: 78px;
+}
 .catalog-sorting {
   background-color: #ffffff;
 }
-.card {
+.sort-view {
   display: flex;
   list-style-type: none;
-  margin: 0 0 auto 0;
+  margin: 0 0 0 auto;
   padding: 0;
+  text-align: center;
 }
+.toggle-item:not(:last-child) {
+ margin-right:8px;
+}
+.toggle-icon{
+  margin-right:8px;
+ }
+
+
+
 /* Карточки гостиниц */
 .hotels {
   background-color: #ffffff;
@@ -592,8 +637,8 @@ color:#000000;
   padding: 0;
 }
 .pagination-item {
- width: 60px;
- height: 60px;
+ min-width: 60px;
+ min-height: 60px;
  background-color: #82B3D3;
  /* margin-right: 8px; */
 }
